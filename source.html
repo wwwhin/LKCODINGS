@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOURCE CODE LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bdy">
+    <div class="content">
+        <h2>LKCODINGS</h2>
+        <h2>LKCODINGS</h2>
+    </div>
+    <!-- LITTLE SOLAR SYSTEM START -->
+    <h1 class="src2">SOURCE CODES</h1>
+    <h2 class="ab">>>LITTLE SOLAR SYSTEM<<</h2>
+    <div class="solar">
+        <div class="container">
+            <div class="sun"></div>
+            <div class="earth">
+                <div class="moon"></div>
+            </div>
+        </div>
+        <style>
+            .container{
+                font-size: 10px;
+                width: 40em;
+                height: 40em;
+                position: relative;
+                overflow: hidden;
+            }
+            .sun{
+                position: absolute;
+                top: 15em;
+                left: 15em;
+                width: 10em;
+                height: 10em;
+                background-color: rgb(255,204,0);
+                border-radius: 50%;
+                box-shadow: 0 0 3em white;
+            }
+            .earth, .moon{
+                position: absolute;
+                border-style: solid;
+                border-color: white transparent;
+                border-width: 0.1em 0.1em 0 0;
+                border-radius: 50%;
+            }
+            .earth{
+                top: 5em;
+                left: 5em;
+                width: 30em;
+                height: 30em;
+                animation: move 36.5s linear infinite;
+            }
+            .moon{
+                top: 0.5em;
+                left: 22em;
+                width: 8em;
+                height: 8em;
+                animation: move 5s linear infinite;
+            }
+            .earth::before,
+            .moon::before{
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+            }
+            .earth::before{
+                top: 2.8em;
+                right: 2.8em;
+                width: 3em;
+                height: 3em;
+                background-color: rgb(80,80,201);
+            }
+            .moon::before{
+                top: 0.8em;
+                right: 0.2em;
+                width: 1.2em;
+                height: 1.2em;
+                background-color: silver;
+            }
+            @keyframes move{
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style> 
+    </div>
+    <a href="solar.html" class="solar1" download="solar.html">Download source</a>
+  
+    <h2 class="loading">>>LOADING ANIMATION<<</h2>
+    <div class="load" >
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <style>
+            .loader{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 35%;
+                top: 40%;
+            }
+            .loader div{
+                position: absolute;
+                width: 35%;
+                height: 35%;
+                border-radius: 5px;
+                animation: load 2s infinite ease-in-out;
+            }
+            .loader div:nth-last-of-type(1){
+                background-color: #b22722;
+            }
+            .loader div:nth-last-of-type(2){
+                background-color: #b22722;
+                animation-delay: 0.5s;
+            }
+            .loader div:nth-last-of-type(3){
+                background-color: #f8cb2e;
+                animation-delay: 1s;
+            }
+            .loader div:nth-last-of-type(4){
+                background-color: #006e7f;
+                animation-delay: 1.5s;
+            }
+            @keyframes load{
+                0%{
+                    transform: translate(0%);
+                    border-radius: 50%;
+                }
+                25%{
+                    transform: translate(200%)
+                    rotate(45deg);
+                    border-radius: 0%;
+                }
+                50%{
+                    transform: translate(200%, 200%);
+                    border-radius: 50%;
+                }
+                75%{
+                    transform: translate(0, 200%) 
+                    rotate(-45deg);
+                    border-radius: 0%;
+                }
+                100%{
+                    transform: translate(0%);
+                    border-radius: 50%;
+                }
+            }
+        </style>
+    </div>
+    <a class="load1" href="animation.html" download="animation.html">Download SOURCE</a>
+
+    <h2 class="gl">>>HOVER GLOWING BUTTON<<</h2>
+    <div class="gl1">
+        <!-- CODE BY ABHISHEK -->
+    <button>Glowing Button</button>
+
+
+    <style>
+        button{
+            position: relative;
+            height: 50px;
+            width: 150px;
+            top: 200px;
+            color: black;
+            border-radius: 10%;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+            border-color: cyan;
+            background-color: cyan;
+            box-shadow: 0 0 5px cyan, 0 0 25px;
+        }
+        button:hover{
+            box-shadow: 0 0 5px cyan ,
+            0 0 25px cyan , 0 0 50px cyan,
+            0 0 200px cyan , 0 0 300px cyan;
+        }
+
+        
+    </style>
+    </div>
+    <a class="gl2" href="glowingbutton.html" download="glowingbutton.html">Download Source</a>
+    <script src="main.js"></script>
+</body>
+</html>
